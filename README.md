@@ -52,7 +52,8 @@ Open  `Dos Command Prompt`
 $ cd C:/...../antlr4
 $ npm -g install antlr4
 ```
-set System variables: NODE_PATH C:\Users\-user name-\AppData\Roaming\npm\node_modules
+set System variables: NODE_PATH C:\Users\-user name-\AppData\Roaming\npm\node_modules  
+
 ```
 $ cd C:/.../01_Calculator1
 $ java.exe -jar C:/Javalib/antlr-4.8-complete.jar -Dlanguage=JavaScript -o gen Expr1.g4
@@ -61,7 +62,7 @@ $ node.exe calculator1.js
 
 
 
-output
+output  
 ```
 Tokens:[@tokenIndex,start:stop='text',<type>(,channel=nr),line:column]
 [@0,0:2='100',<4>,1:0]
@@ -159,7 +160,8 @@ $ cd C:/.../antlr4_JavaScript_examples/02_Calculator2/src
 $ java.exe -jar C:/Javalib/antlr-4.8-complete.jar -Dlanguage=JavaScript -visitor -no-listener -o gen Expr2.g4
 ```
 
-- Create package.json, package-lock.json  
+- Create package.json  
+
 
 ```
 $ cd ..
