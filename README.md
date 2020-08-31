@@ -22,12 +22,10 @@ Open 02_Calculator2/dist/index.html in Chrome in your browser
 Make C:\Javalib and save antlr-4.8-complete.jar in C:/Javalib.
 - JavaScript runtime lib [antlr-javascript-runtime-4.8.zip](https://www.antlr.org/download.html)  
 unzip it (created folder antlr4)  
-
-
-
- 
-
-
+- Open  `Dos Command Prompt`  
+`$ cd C:/...../antlr4`  
+`$ npm -g install antlr4`  
+`set System variables: NODE_PATH C:\Users\-user name-\AppData\Roaming\npm\node_modules`  
 
 ### 01_Calculator1 (first example)
 
@@ -46,13 +44,6 @@ expr : <assoc=right> expr '^' expr # Expo
 INT : [0-9]+ ;
 WS : [ \t\n\r]+ -> skip ;
 ```  
-
-Open  `Dos Command Prompt`  
-```
-$ cd C:/...../antlr4
-$ npm -g install antlr4
-```
-set System variables: NODE_PATH C:\Users\-user name-\AppData\Roaming\npm\node_modules  
 
 ```
 $ cd C:/.../01_Calculator1
