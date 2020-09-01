@@ -257,7 +257,7 @@ WS  :   [ \t\n\r]+ -> skip ;
 
 
 ```
-$ cd C://...//03_Json2xml
+$ cd C:/.../03_Json2xml
 $ java.exe -jar C:/Javalib/antlr-4.8-complete.jar -Dlanguage=JavaScript -o gen Json.g4
 $ node.exe json2xml.js
 ```
