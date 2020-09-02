@@ -12,6 +12,7 @@
 Open 02_Calculator2/dist/index.html in your browser  
 
 ![calc2](./gif_files/calc2.gif)  
+Demo's grammar  
 Expr2.g4
 ```antlr
 grammar Expr2;
