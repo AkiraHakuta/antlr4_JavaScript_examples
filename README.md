@@ -9,7 +9,7 @@
 
 ### Demo  
 
-Open 02_Calculator2/dist/index.html in Chrome in your browser
+Open 02_Calculator2/dist/index.html in your browser
 
 ![calc2](./gif_files/calc2.gif)
 
@@ -192,7 +192,7 @@ $ npm install --save-dev webpack webpack-cli
 $ npx webpack
 ```
 
-- Open 02_Calculator2/dist/index.html open in your browser
+- Open 02_Calculator2/dist/index.html in your browser
 
 
 ### 03_Json2xml  
