@@ -9,9 +9,29 @@
 
 ### Demo  
 
-Open 02_Calculator2/dist/index.html in your browser
+Open 02_Calculator2/dist/index.html in your browser  
 
-![calc2](./gif_files/calc2.gif)
+![calc2](./gif_files/calc2.gif)  
+Expr2.g4
+```antlr
+grammar Expr2;
+
+stat : expr EOF;
+
+expr:  <assoc=right> expr '^' expr # expo
+    |  expr op=('*'|'/') expr      # mul_div
+    |  op=('+'|'-') expr           # pm_expr
+    |  expr op=('+'|'-') expr      # add_sub
+    |  FLOAT                       # float
+    |  INT                         # integer
+    |  '(' expr ')'                # paren
+    ;
+
+FLOAT:  DIGIT*  '.' DIGIT+ ;
+INT : DIGIT+ ;
+fragment DIGIT: [0-9] ;
+WS : [ \t\n\r]+ -> skip ;
+```  
 
 
 ### Requirement   
@@ -96,27 +116,6 @@ result:
 
 Example with Webpack  
 See DEMO
-
-Expr2.g4
-```antlr
-grammar Expr2;
-
-stat : expr EOF;
-
-expr:  <assoc=right> expr '^' expr # expo
-    |  expr op=('*'|'/') expr      # mul_div
-    |  op=('+'|'-') expr           # pm_expr
-    |  expr op=('+'|'-') expr      # add_sub
-    |  FLOAT                       # float
-    |  INT                         # integer
-    |  '(' expr ')'                # paren
-    ;
-
-FLOAT:  DIGIT*  '.' DIGIT+ ;
-INT : DIGIT+ ;
-fragment DIGIT: [0-9] ;
-WS : [ \t\n\r]+ -> skip ;
-```  
 
 
 After the Webpack build task is executed, the file structure should look as follows: 
